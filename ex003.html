@@ -18,15 +18,20 @@
     
 
     <script>
-        window.alert('qual o seu nome? ')
-        var n1 = Number.parseInt(window.prompt('Digite um número: ')) 
-        var n1 = Number.parseInt(window.prompt('Digite outro número: '))
+        
+        var n1 = Number(window.prompt('Digite um número: ')) 
+        var n2 = Number(window.prompt('Digite outro número: '))
         var s = n1 + n2
-        window.alert('a soma entre os valores é: ' + s)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
 
         /* o + serve paraadição e concatenação vc precisa dizer ao js qual ele deve usar
         number + number ele StorageManagerstring + string ele concatena
         O prompt recebe string então precisa converter de string para número o que digitou no prompt*/
+
+        /*para converter de string para numero:
+        number() ou number.pasceFloat ou number.parceInt
+        oara converter de number para string:
+        String(n) */
     </script>
 </body>
 </html>
