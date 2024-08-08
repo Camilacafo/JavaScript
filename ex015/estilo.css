@@ -5,6 +5,12 @@ body{
     font: normal 15pt arial;
 }
 
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+}
+
 header{
     color: white;
     text-align: center;
