@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercício</title>
+    <title>verificador de idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -12,8 +12,29 @@
     </header>
 
     <section>
-        <div id="foto">teste</div>
-        <div id="dados">teste</div>
+        <div id="foto">
+            <p>
+                <label for="txtano">Ano de nascimento:</label>
+                <input type="number" name="txtano" id="txtano">
+            </p>
+           
+
+            <p>Sexo: 
+            <label for="txtsexo">masculino</label>
+            <input type="radio" name="radsexo" id="masc" checked>
+            <label for="fem">feminino</label>
+            <input type="radio" name="radsexo" id="fem">
+        </p>
+
+        <p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </p>
+
+        </div>
+           
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
     </section>
 
     <footer>&copy;cursoemvideo</footer>
